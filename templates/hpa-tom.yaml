@@ -2,7 +2,7 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ include "spring-helm.fullname" . }}
+  name: {{ include "spring-helm.fullname" . }}-tom
   labels:
     {{- include "spring-helm.labels" . | nindent 4 }}
 spec:
